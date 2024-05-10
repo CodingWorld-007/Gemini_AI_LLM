@@ -8,7 +8,7 @@ working_directory = os.path.dirname(os.path.abspath(__file__))
 
 config_file_path = f"{working_directory}\config.json"
 
-config_data = json.load(open(config_file_path))
+config_data = json.load(open("config.json"))
 
 #loading api key
 GOOGLE_API_KEY = config_data["GOOGLE_API_KEY"]
